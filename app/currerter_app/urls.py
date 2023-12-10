@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import exchange
+from .views import exchange, update_database
 
 urlpatterns = [
-        path('', exchange)
+        path('', exchange),
+        path('', update_database),
 ]

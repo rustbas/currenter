@@ -2,4 +2,32 @@
 
 {% block content %}
 	<h1>Hello, {{ name }}!</h1>
+	<form id='form' method='post'>
+		<label for="from_cur">Choose a from_cur:</label>
+    			<select name="from_cur" id="from">
+        			<option value="GBP">GBP</option>
+        			<option value="USD">USD</option>
+        			<option value="EUR">EUR</option>
+        			<option value="JPY">JPY</option>
+    			</select>
+			<br>
+		<label for="to_cur">Choose a to_cur:</label>
+    			<select name="to_cur" id="to">
+        			<option value="GBP">GBP</option>
+        			<option value="USD">USD</option>
+        			<option value="EUR">EUR</option>
+        			<option value="JPY">JPY</option>
+    			</select>
+			<br>
+
+		{% csrf_token %}
+		<label for="phone">Enter currency amount:</label>
+		<input type='tel' name='amount'> 
+		<div class="submit-btn mt-3"> 
+			<button type="submit" class="btn btn-primary">Submit</button> 
+		</div>
+	</form>
+	 
+	<h1>{{amount }} {{ from_cur }} = {{ result }} {{ to_cur}}</h1>
+	<h1> Last database update: {{ last_update }} </h1>
 {% endblock %}
