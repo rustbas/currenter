@@ -19,13 +19,19 @@ cd app/currerter_app/sqlite3/
 cat create_tables.sql | sqlite database.sqlite3
 ```
 
-4. Migrate the databases
+4. Activate the virtual env
+
+```shell
+poetry shell
+```
+
+5. Migrate the databases
 ```shell
 cd app
 ./manage migrate
 ```
 
-5. Run the server
+6. Run the server
 ```shell
 cd app
 ./manage runserver
@@ -33,7 +39,7 @@ cd app
 
 # Usage
 
-1. Go to `localhost:8000`
+1. Open `localhost:8000` in your browser
 2. Choose currencies
 3. Insert amount 
 4. Click `Submit`
