@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "currerter"
+version = "0.1.0"
+description = "Simple currency converter"
+authors = ["rustam"]
+license = "GNU GPL v3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
