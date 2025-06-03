@@ -1,4 +1,5 @@
-# currenter
+# Currenter
+
 Simple currency converter.
 
 # Initialization
