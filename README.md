@@ -36,7 +36,8 @@ foo@bar:~/currenter$ docker run --rm -d -p 8000:80 wtukatyr/currenter:latest
 
 # TODO
 
-1. [ ] Add button to update the database
-2. [ ] Add frontend
-3. [ ] Add more currencies
-4. [ ] Refactor database workflow
+1. [ ] Change `sqlite` to `postgreql`
+2. [ ] Add button to update the database
+3. [ ] Add frontend
+4. [ ] Add more currencies
+5. [ ] Refactor database workflow
