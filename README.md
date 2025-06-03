@@ -8,7 +8,7 @@ Simple currency converter.
 
 You can pull it from DockerHub:
 ```console
-foo@bar:~/currenter$ docker run --rm -d -p 8000:80 wtukatyr/currenter:latest
+foo@bar:~$ docker run --rm -d -p 8000:80 wtukatyr/currenter:latest
 ```
 
 ## Manual building
