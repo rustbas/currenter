@@ -1,41 +1,30 @@
-# currerter
+# currenter
 Simple currency converter.
 
-# Installation
+# Initialization
 
-1. Download the repo
-```shell
-git clone https://github.com/rustbas/currerter.git
+## DockerHub
+
+You can pull it from DockerHub:
+```console
+foo@bar:~/currenter$ docker run --rm -d -p 8000:80 wtukatyr/currenter:latest
 ```
 
-2. Install dependecies
-```sh
-poetry install --no-root
-```
+## Manual building
 
-3. Create the database
-```shell
-cd app/currerter_app/sqlite3/
-cat create_tables.sql | sqlite database.sqlite3
-```
-
-4. Activate the virtual env
-
-```shell
-poetry shell
-```
-
-5. Migrate the databases
-```shell
-cd app
-./manage migrate
-```
-
-6. Run the server
-```shell
-cd app
-./manage runserver
-```
+1. Clone the repository:
+    ```console
+    foo@bar:~$ git clone https://github.com/rustbas/currenter.git
+    foo@bar:~$ cd currenter
+    ```
+2. Build the docker image:
+    ```console
+    foo@bar:~/currenter$ docker build -t currenter .
+    ```
+3. Run the docker container:
+    ```console
+    foo@bar:~/currenter$ docker run --rm -d -p 8000:80 currenter:latest
+    ```
 
 # Usage
 
